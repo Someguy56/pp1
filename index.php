@@ -11,6 +11,8 @@
     <h1>Pair Program 1</h1>
     <?php
         include("functions.php");
+
+        echo '<p>Largest number in the array is: '.largest($numbers).'</p>';
     ?>
 </body>
 </html>

@@ -10,3 +10,16 @@
     }
 
     printArr($numbers);
+
+    function largest($nums)
+    {
+        $largest = $nums[0];
+        foreach ($nums as $num)
+        {
+            if($num > $largest)
+            {
+                $largest = $num;
+            }
+        }
+        return $largest;
+    }

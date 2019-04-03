@@ -33,3 +33,16 @@
         }
         return $total/sizeof($nums);
     }
+
+    function removeDups($nums)
+    {
+        $new_nums = [];
+        foreach ($nums as $num)
+        {
+            if(!in_array($num,$new_nums))
+            {
+                $new_nums[] = $num;
+            }
+        }
+        return $new_nums;
+    }

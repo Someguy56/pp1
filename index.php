@@ -14,6 +14,8 @@
 
         echo '<p>Largest number in the array is: '.largest($numbers).'</p>';
         echo '<p>Average of the array is: '.average($numbers).'</p>';
+        echo '<p>The array without dupes is: </p>';
+        printArr(removeDups($numbers));
     ?>
 </body>
 </html>

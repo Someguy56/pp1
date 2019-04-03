@@ -23,3 +23,13 @@
         }
         return $largest;
     }
+
+    function average($nums)
+    {
+        $total = 0;
+        foreach ($nums as $num)
+        {
+            $total += $num;
+        }
+        return $total/sizeof($nums);
+    }

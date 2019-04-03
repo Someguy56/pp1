@@ -13,6 +13,7 @@
         include("functions.php");
 
         echo '<p>Largest number in the array is: '.largest($numbers).'</p>';
+        echo '<p>Average of the array is: '.average($numbers).'</p>';
     ?>
 </body>
 </html>

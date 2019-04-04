@@ -16,6 +16,8 @@
         echo '<p>Average of the array is: '.average($numbers).'</p>';
         echo '<p>The array without dupes is: </p>';
         printArr(removeDups($numbers));
+        echo '<p>The array as an associate one is: </p>';
+        printAssoc(distribution($numbers));
     ?>
 </body>
 </html>

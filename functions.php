@@ -46,3 +46,29 @@
         }
         return $new_nums;
     }
+
+    function distribution($nums)
+    {
+        $assoc_nums = [];
+        foreach ($nums as $num)
+        {
+            if(!key_exists($num, $assoc_nums))
+            {
+                $assoc_nums[$num] = 1;
+            }
+            else
+            {
+                $assoc_nums[$num] = ++$assoc_nums[$num];
+            }
+        }
+        ksort($assoc_nums);
+        return $assoc_nums;
+    }
+
+    function printAssoc($nums)
+    {
+        foreach ($nums as $key => $value)
+        {
+            echo '<p>Num: '.$key.' Value: '.$value.'</p>';
+        }
+    }
